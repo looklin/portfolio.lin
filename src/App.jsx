@@ -1,8 +1,9 @@
 import { Header, TabGrid, Background } from './components';
+import { MobileHeader, MobilePortfolio } from './components/Mobile';
 import { LanguageProvider } from './context';
-import { useTabState } from './hooks';
+import { useTabState, useIsMobile } from './hooks';
 
-const AppContent = () => {
+const PCContent = () => {
   const { handleMainClick } = useTabState();
 
   return (
@@ -14,6 +15,21 @@ const AppContent = () => {
       </main>
     </div>
   );
+};
+
+const MobileContent = () => {
+  return (
+    <div className="min-h-screen bg-white">
+      <MobileHeader />
+      <MobilePortfolio />
+    </div>
+  );
+};
+
+const AppContent = () => {
+  const isMobile = useIsMobile();
+
+  return isMobile ? <MobileContent /> : <PCContent />;
 };
 
 const App = () => {
