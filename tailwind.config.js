@@ -20,12 +20,22 @@ export default {
       },
       animation: {
         breathe: 'breathe 3s ease-in-out infinite',
+        fadeIn: 'fadeIn 0.2s ease-out',
+        scaleIn: 'scaleIn 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
       },
       keyframes: {
         breathe: {
           '0%, 100%': { transform: 'scale(1)' },
           '50%': { transform: 'scale(1.05)' },
-        }
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        scaleIn: {
+          '0%': { opacity: '0', transform: 'scale(0.92)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        },
       }
     },
   },

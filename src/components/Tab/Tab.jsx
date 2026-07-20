@@ -10,6 +10,7 @@ const Tab = ({
   hovered, 
   onHover, 
   onLeave, 
+  onThumbnailClick,
   baseGray = '#e2e2e2' 
 }) => {
   const isSelected = active;
@@ -43,7 +44,7 @@ const Tab = ({
       onMouseEnter={onHover}
       onMouseLeave={onLeave}
     >
-      <TabThumbnails id={id} show={showThumbnails} />
+      <TabThumbnails id={id} show={showThumbnails} onThumbnailClick={onThumbnailClick} />
       <TabHeader id={id} bgColor={bgColor} bgStyle={bgStyle} />
       <TabContent title={title} bgColor={bgColor} bgStyle={bgStyle} />
     </div>

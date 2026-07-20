@@ -1,5 +1,5 @@
 import { useLanguage } from '../../context';
-import { portfolioCategories } from '../../config/mobileData';
+import { portfolioCategories } from '../../config/portfolioData';
 import CategorySection from './CategorySection';
 import FriendLinks from './FriendLinks';
 

@@ -1,5 +1,5 @@
 import { useLanguage } from '../../context';
-import { friendLinks } from '../../config/mobileData';
+import { friendLinks } from '../../config/portfolioData';
 
 const FriendLinks = () => {
   const { lang } = useLanguage();

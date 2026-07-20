@@ -4,7 +4,7 @@ const WorkCard = ({ cover, title, onClick }) => {
       className="flex-shrink-0 w-40 sm:w-44 cursor-pointer group"
       onClick={onClick}
     >
-      <div className="relative overflow-hidden rounded-xl aspect-[4/5] mb-2">
+      <div className="relative overflow-hidden rounded-xl aspect-[4/5] mb-2 bg-gray-100">
         <img 
           src={cover} 
           alt={title} 

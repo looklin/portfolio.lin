@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { useLanguage } from '../../context';
 import WorkCard from './WorkCard';
+import WorkDialog from '../WorkDialog';
 
 const CategorySection = ({ category }) => {
   const { lang } = useLanguage();
   const [isExpanded, setIsExpanded] = useState(true);
+  const [selectedWork, setSelectedWork] = useState(null);
 
   return (
     <section className="mb-8 px-4">
@@ -30,12 +32,19 @@ const CategorySection = ({ category }) => {
               key={work.id}
               cover={work.cover}
               title={work.title[lang]}
-              onClick={() => {}}
+              onClick={() => setSelectedWork(work)}
             />
           ))}
         </div>
         <p className="text-xs text-gray-400 mt-2">{category.works.length} {lang === 'zh' ? '个作品' : 'works'}</p>
       </div>
+
+      {selectedWork && (
+        <WorkDialog 
+          work={selectedWork} 
+          onClose={() => setSelectedWork(null)} 
+        />
+      )}
     </section>
   );
 };

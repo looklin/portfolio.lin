@@ -1,4 +1,4 @@
-const TabThumbnail = ({ id, index, rotation, zIndex, size = 'default' }) => {
+const TabThumbnail = ({ work, position, rotation, zIndex, size = 'default', onClick }) => {
   const sizeClasses = {
     small: 'w-24 h-24 md:w-28 md:h-28',
     default: 'w-28 h-28 md:w-32 md:h-32',
@@ -18,24 +18,27 @@ const TabThumbnail = ({ id, index, rotation, zIndex, size = 'default' }) => {
   };
 
   return (
-    <a 
-      href={`#/work/${id}-${index}`} 
-      onClick={(e) => e.stopPropagation()} 
-      className={`absolute ${sizeClasses[size]} ${rotationClasses[rotation]} hover:z-20 transition-all duration-300 hover:scale-110`}
+    <div 
+      onClick={(e) => {
+        e.stopPropagation();
+        onClick?.(work);
+      }} 
+      className={`absolute ${sizeClasses[size]} ${rotationClasses[rotation]} hover:z-20 transition-all duration-300 hover:scale-110 cursor-pointer`}
       style={{ 
-        bottom: positions[index].bottom,
-        left: positions[index].left,
+        bottom: positions[position].bottom,
+        left: positions[position].left,
         zIndex: zIndex,
       }}
     >
-      <div className="w-full h-full bg-white shadow-xl hover:shadow-2xl cursor-pointer">
+      <div className="w-full h-full bg-white shadow-xl hover:shadow-2xl">
         <img 
-          src={`https://picsum.photos/200/200?random=${id}${index}`} 
-          alt={`cover ${index}`} 
+          src={work.cover} 
+          alt={work.title?.en || `cover ${position}`} 
           className="w-full h-full object-cover p-2 pointer-events-none" 
+          loading="lazy"
         />
       </div>
-    </a>
+    </div>
   );
 };
 
