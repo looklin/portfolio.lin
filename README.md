@@ -1,16 +1,59 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+基于 React + Vite + Tailwind CSS 构建的个人作品集网站，支持中英文双语切换，PC 和移动端自适应。
 
-Currently, two official plugins are available:
+## 分类
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **工业生产交互** — Industrial Production Interaction
+- **跨行业全栈解决方案** — Cross-Industry Full-Stack Solutions
+- **教育产品** — Education Products
+- **技术基础设施** — Technical Infrastructure
+- **AI 相关** — AI Related
 
-## React Compiler
+## 技术栈
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| 类别 | 技术 |
+|------|------|
+| 框架 | React 19 |
+| 构建 | Vite 8 |
+| 样式 | Tailwind CSS 3 |
+| 字体 | Inter / Space Mono / Caveat |
+| 语言 | JavaScript (ESM) |
 
-## Expanding the ESLint configuration
+## 快速开始
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# 安装依赖
+npm install
+
+# 启动开发服务器
+npm run dev
+
+# 构建生产版本
+npm run build
+
+# 预览生产构建
+npm run preview
+```
+
+## 项目结构
+
+```
+src/
+├── assets/          # 图片资源（按分类分文件夹）
+├── components/      # 组件
+│   ├── Background/  # 背景
+│   ├── Header/      # 顶部导航 & 语言切换
+│   ├── Mobile/      # 移动端组件
+│   ├── Tab/         # 分类标签页
+│   └── TabGrid/     # PC 端网格布局
+├── config/          # 数据 & 翻译配置
+├── context/         # 语言上下文
+├── hooks/           # 自定义 Hooks
+├── App.jsx          # 根组件
+└── main.jsx         # 入口
+```
+
+## 许可
+
+MIT
