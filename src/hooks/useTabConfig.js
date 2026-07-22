@@ -6,7 +6,7 @@ const useTabConfig = () => {
   return [
     { 
       id: '01', 
-      title: t.branding, 
+      title: t.industrialProduction, 
       colSpan: 1, 
       rowSpan: 2, 
       baseGray: '#e8e8e8', 
@@ -14,7 +14,7 @@ const useTabConfig = () => {
     },
     { 
       id: '02', 
-      title: t.motionDesign, 
+      title: t.crossIndustrySolutions, 
       colSpan: 2, 
       rowSpan: 2, 
       baseGray: '#e0e0e0', 
@@ -23,7 +23,7 @@ const useTabConfig = () => {
     },
     { 
       id: '03', 
-      title: t.uiUx, 
+      title: t.educationProducts, 
       colSpan: 1, 
       rowSpan: 1, 
       baseGray: '#d8d8d8', 
@@ -32,7 +32,7 @@ const useTabConfig = () => {
     },
     { 
       id: '04', 
-      title: t.graphisme, 
+      title: t.techInfrastructure, 
       colSpan: 1, 
       rowSpan: 1, 
       baseGray: '#d0d0d0', 
@@ -42,7 +42,7 @@ const useTabConfig = () => {
     },
     { 
       id: '05', 
-      title: t.animation3d, 
+      title: t.aiRelated, 
       colSpan: 1, 
       rowSpan: 1, 
       baseGray: '#c8c8c8', 
