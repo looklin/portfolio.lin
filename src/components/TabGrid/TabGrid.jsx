@@ -21,7 +21,7 @@ const TabGrid = () => {
   return (
     <>
       <div className="grid grid-cols-3 grid-rows-[1.15fr_1fr] h-[70vh] w-full max-w-[1400px] mx-auto p-4 pb-0">
-        {/* 01 Branding - col 1, row 1-2 */}
+        {/* 01 工业生产交互 - col 1, row 1-2 */}
         <div 
           className="relative flex flex-col z-[1]"
           style={{ gridColumn: '1', gridRow: '1 / 3' }}
@@ -39,7 +39,7 @@ const TabGrid = () => {
           />
         </div>
         
-        {/* 02 Motion design - col 2-3, row 1-2 */}
+        {/* 02 跨行业全栈解决方案 - col 2-3, row 1-2 */}
         <div 
           className="relative -ml-2 flex flex-col z-[2]"
           style={{ gridColumn: '2 / 4', gridRow: '1 / 3' }}
@@ -57,7 +57,7 @@ const TabGrid = () => {
           />
         </div>
 
-        {/* 03 UI & UX - col 1, row 2 */}
+        {/* 03 教育产品 - col 1, row 2 */}
         <div 
           className="relative -mt-[40px] md:-mt-[48px] flex flex-col z-[3]"
           style={{ gridColumn: '1', gridRow: '2' }}
@@ -75,7 +75,7 @@ const TabGrid = () => {
           />
         </div>
 
-        {/* 04 Graphisme - col 2, row 2 */}
+        {/* 04 技术基础设施 - col 2, row 2 */}
         <div 
           className="relative -ml-2 -mt-[40px] md:-mt-[48px] flex flex-col z-[4]"
           style={{ gridColumn: '2', gridRow: '2' }}
@@ -93,7 +93,7 @@ const TabGrid = () => {
           />
         </div>
 
-        {/* 05 3D Animation - col 3, row 2 */}
+        {/* 05 AI 相关 - col 3, row 2 */}
         <div 
           className="relative -ml-2 -mt-[40px] md:-mt-[48px] flex flex-col z-[5]"
           style={{ gridColumn: '3', gridRow: '2' }}
