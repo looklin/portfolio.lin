@@ -49,9 +49,12 @@ const WorkDialog = ({ work, onClose }) => {
 
         {/* 底部信息区域 */}
         <div className="px-4 py-4 border-t border-gray-100 bg-white">
-          <h3 className="text-base font-semibold text-gray-900 mb-3">
+          <h3 className="text-base font-semibold text-gray-900 mb-1">
             {work.title[lang]}
           </h3>
+          <p className="text-sm text-gray-500 leading-relaxed mb-3">
+            {work.intro?.[lang]}
+          </p>
           {work.sourceUrl ? (
             <a 
               href={work.sourceUrl} 

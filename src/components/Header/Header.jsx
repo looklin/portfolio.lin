@@ -8,7 +8,7 @@ const Header = () => {
   const contactLinks = [
     { label: t.contactMe },
     { label: '+86 13280 972 972' },
-    { label: 'linnanly@gmail.com', href: 'mailto:linnanly@gmail.com' },
+    { label: 'nan.lin@gmail.com', href: 'mailto:nan.lin@gmail.com' },
   ];
 
   return (

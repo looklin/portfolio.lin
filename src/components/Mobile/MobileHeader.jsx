@@ -8,7 +8,7 @@ const MobileHeader = () => {
       <div className="px-4 py-3 flex items-center justify-between">
         <div className="text-2xl font-script text-gray-900">{t.logo}</div>
         <div className="flex items-center gap-4">
-          <a href="mailto:linnanly@gmail.com" className="text-xs text-gray-600 font-medium">
+          <a href="mailto:nan.lin@gmail.com" className="text-xs text-gray-600 font-medium">
             {t.contactMe}
           </a>
         </div>
